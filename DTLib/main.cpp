@@ -2,6 +2,8 @@
 #include "SmartPointer.h"
 #include "Exception.h"
 #include <iostream>
+#include "object.h"
+#include "list.h"
 
 using namespace std;
 using namespace DTLib;
@@ -35,6 +37,12 @@ void test_exception() {
         cout << e.message() << endl;
         cout << e.location()<< endl;
     }
+}
+
+void test_list()
+{
+//    List<int> * = nullptr;
+
 }
 
 int main(int argc, char *argv[])

@@ -15,8 +15,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    Exception.cpp
+    Exception.cpp \
+    object.cpp
 
 HEADERS += \
     SmartPointer.h \
-    Exception.h
+    Exception.h \
+    object.h \
+    list.h \
+    seqlist.h

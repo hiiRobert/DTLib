@@ -4,6 +4,8 @@
 #include <iostream>
 #include "object.h"
 #include "list.h"
+#include "dynamiclist.h"
+#include "linklist.h"
 
 using namespace std;
 using namespace DTLib;
@@ -41,15 +43,29 @@ void test_exception() {
 
 void test_list()
 {
-//    List<int> * = nullptr;
+//    DynamicList<int> l(20);
+//    for (int i = 0; i < 10; i++) {
+//        l.insert(i);
+//    }
+//    l.print();
 
+}
+
+class TestA
+{
+public:
+    TestA() { throw 0;}
+};
+
+void test_link_list() {
+    cout << "xxxxx...." << endl;
 }
 
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    test_exception();
+//    test_link_list();
 
     return a.exec();
 }

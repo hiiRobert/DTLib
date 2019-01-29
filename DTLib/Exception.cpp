@@ -8,7 +8,7 @@ namespace DTLib {
 
 void Exception::init(const char *message, const char *file, int line)
 {
-    m_message = strdup(message);
+    m_message = message != nullptr ? strdup(message) : nullptr;
     if (file != nullptr) {
         char sl[16] = {0};
 #ifdef Q_OS_WIN

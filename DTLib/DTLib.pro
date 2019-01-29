@@ -28,4 +28,5 @@ HEADERS += \
     dynamiclist.h \
     array.h \
     dynamicarray.h \
-    linklist.h
+    linklist.h \
+    staticlinklist.h

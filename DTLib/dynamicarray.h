@@ -47,7 +47,7 @@ protected:
     }
 
 public:
-    DynamicArray (int length) {
+    DynamicArray (int length = 0) {
         this->m_array = new T[length];
         if (this->m_array) {
             this->m_length = length;

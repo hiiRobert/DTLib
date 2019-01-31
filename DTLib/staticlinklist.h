@@ -31,7 +31,7 @@ protected:
         for (int i = 0; i < N; i++) {
             if (!m_used[i]) {
                 ret = reinterpret_cast<SNode *>(m_sapce) + i;
-                retu = new(ret)SNode();
+                ret = new(ret)SNode();
                 m_used[i] = 1;
                 break;
             }
@@ -47,6 +47,7 @@ protected:
             if (pn == space + i) {
                 m_used[i] = 0;
                 pn->~SNode();
+                break;
             }
         }
     }
@@ -62,6 +63,10 @@ public:
 
     int capacity() {
         return N;
+    }
+
+    ~StaticLinkList() {
+        this->clear();
     }
 
 };

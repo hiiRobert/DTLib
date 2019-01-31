@@ -29,7 +29,7 @@ public:
 
 
     ~SmartPointer() {
-        delete m_pointer;
+        delete this->m_pointer;
     }
 
 };

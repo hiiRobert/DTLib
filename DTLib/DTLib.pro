@@ -30,4 +30,5 @@ HEADERS += \
     dynamicarray.h \
     linklist.h \
     staticlinklist.h \
-    pointer.h
+    pointer.h \
+    sharedpointer.h
